@@ -1,0 +1,61 @@
+.bg-yellow {
+  background-color: yellow;
+}
+
+.maiuscula {
+  text-transform: uppercase;
+}
+
+.font-green {
+  color: green;
+}
+
+.font-red {
+  color: red;
+}
+
+.header-grande {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.font-blue {
+  color: blue;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.stack:hover {
+  font-weight: bold;
+  color: orange;
+}
+
+.w3:hover {
+  font-weight: bold;
+  color: green;
+}
+
+.mdn:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.devdocs:hover {
+  font-weight: bold;
+  color: yellow;
+}
+
+.trybe:hover {
+  font-weight: bold;
+  color: green;
+}
