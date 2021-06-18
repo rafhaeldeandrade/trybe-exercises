@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício Aula 5.4 - Web Storage</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Aprofundando os conhecimentos em web storage</h1>
+    </header>
+    <main id="main">
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed
+          mauris molestie, pulvinar justo nec, vehicula leo. Praesent nec metus
+          vitae risus gravida congue fringilla et nunc. Duis eget massa dolor.
+          Suspendisse risus arcu, aliquet nec ante ac, cursus volutpat dolor.
+          Integer quis diam magna. Mauris placerat metus urna, ut lobortis magna
+          feugiat vitae.
+        </p>
+        <p>
+          Proin commodo aliquet venenatis. Curabitur rutrum felis non nisl
+          sagittis, eu tempus eros pretium. Cras eleifend eget urna sed
+          fermentum. Aenean lobortis, justo sed aliquet pulvinar, lacus mauris
+          blandit tellus, ac ullamcorper augue felis non est. Nunc semper
+          vestibulum ullamcorper. Morbi vitae ante ac lacus venenatis convallis
+          at quis elit. Phasellus lacinia, ante in ultrices ultricies, erat
+          neque venenatis nisl, eu elementum dolor sem ut ante. Morbi sit amet
+          sodales augue. Fusce consectetur non risus at bibendum. Maecenas
+          placerat sed leo sed rhoncus. Phasellus tempor, odio nec imperdiet
+          aliquam, felis dolor tincidunt dolor, a pulvinar ex leo non augue. Ut
+          eget dignissim neque, pulvinar condimentum risus. Pellentesque ut
+          bibendum nunc, id auctor ligula. Morbi volutpat id lorem at rhoncus.
+        </p>
+        <p>
+          In fermentum vel dolor finibus facilisis. Duis ut venenatis tellus,
+          sit amet volutpat erat. Proin auctor sodales erat sit amet
+          pellentesque. Donec vel posuere tellus, quis imperdiet nisl. Duis et
+          nunc at est volutpat aliquam. Mauris suscipit lacus at lectus molestie
+          commodo. Nam gravida commodo facilisis. Aliquam non nisi id ex luctus
+          consequat eu nec sem. Vestibulum iaculis purus elit, ac tempor lorem
+          facilisis quis. Quisque posuere vel erat dapibus ultricies. Quisque
+          nulla magna, molestie a pellentesque et, condimentum ullamcorper sem.
+          Nullam malesuada viverra turpis, sed pharetra augue laoreet a. Nulla
+          facilis
+        </p>
+        <p>
+          Nunc eu ante lacinia, aliquet elit non, luctus sapien. Aenean
+          consectetur neque erat, non tempus lacus tincidunt ac. Cras nec
+          sagittis quam. Sed eu suscipit enim. Proin sit amet est ipsum. In ex
+          lacus, auctor vitae suscipit a, ullamcorper nec elit. Praesent
+          porttitor fermentum purus eget congue. Sed eros erat, semper
+          ullamcorper erat vel, molestie luctus lacus. Phasellus dapibus velit
+          diam, sed vestibulum nulla lacinia sed. Integer a tincidunt ante.
+          Curabitur ultricies nunc eget leo sodales, condimentum venenatis ex
+          aliquam. Maecenas id lacinia nulla, a consectetur massa. Nulla sit
+          amet nunc nec tortor auctor vehicula. Fusce facilisis neque a justo
+          lobortis porta. Nunc cursus vulputate massa sit amet mattis.
+        </p>
+        <p>
+          Nullam hendrerit eros nec blandit auctor. Proin at risus id sem tempor
+          volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia curae; Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; Sed orci mi,
+          mollis a turpis sed, placerat viverra magna. Suspendisse magna diam,
+          faucibus sit amet metus at, pretium blandit nisi. Etiam laoreet lectus
+          eget tortor dignissim, lacinia placerat justo tristique.
+        </p>
+      </section>
+      <section class="form-container">
+        <div class="cor-de-fundo">
+          <label for="cor-de-fundo">Cor de fundo:</label>
+          <select name="cor-de-fundo" id="cor-de-fundo">
+            <option selected="selected" value="white">Branco</option>
+            <option value="#F7FBFC">Cinza</option>
+            <option value="#D6E6F2">Cinza azulado</option>
+            <option value="#769FCD">Azul</option>
+          </select>
+        </div>
+        <div class="tamanho-da-fonte">
+          <label for="tamanho-da-fonte">Tamanho do Texto:</label>
+          <select name="tamanho-da-fonte" id="tamanho-da-fonte">
+            <option selected="selected" value="12px">12px</option>
+            <option value="13px">13px</option>
+            <option value="14px">14px</option>
+            <option value="15px">15px</option>
+          </select>
+        </div>
+        <div class="cor-da-fonte">
+          <label for="cor-da-fonte">Cor do Texto:</label>
+          <select name="cor-da-fonte" id="cor-da-fonte">
+            <option selected="selected" value="black">Black</option>
+            <option value="darkblue">Dark Blue</option>
+            <option value="brown">Brown</option>
+            <option value="green">Green</option>
+          </select>
+        </div>
+        <div class="espacamento-linhas">
+          <label for="espacamento-linhas">Espaçamento entre as linhas:</label>
+          <select name="espacamento-linhas" id="espacamento-linhas">
+            <option selected="selected" value="1">1</option>
+            <option value="1.3">1.3</option>
+            <option value="1.5">1.5</option>
+            <option value="1.7">1.7</option>
+          </select>
+        </div>
+        <div class="tipo-da-fonte">
+          <label for="tipo-da-fonte">Tipo da fonte:</label>
+          <select name="tipo-da-fonte" id="tipo-da-fonte">
+            <option selected="selected" value="sans-serif">Sans-serif</option>
+            <option value="serif">Serif</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="monospace">Monospace</option>
+          </select>
+        </div>
+      </section>
+      <div class="button">
+        <button id="salvar" type="submit">Mudar & Salvar</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
