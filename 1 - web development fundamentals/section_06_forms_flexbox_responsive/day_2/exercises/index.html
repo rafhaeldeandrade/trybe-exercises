@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bulma/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <form>
+      <fieldset class="control">
+        <div class="field">
+          <label class="label" for="name">Nome:</label>
+          <div class="control">
+            <input class="input" type="text" name="name" id="name" maxlength="40" placeholder="John Doe" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" name="email" id="email" type="email" placeholder="qualquerum@qualquerum.com"
+              maxlength="50">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cpf">CPF:</label>
+          <div class="control">
+            <input class="input" type="text" name="cpf" id="cpf" placeholder="12345678910" maxlength="11" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="address">Endereço:</label>
+          <div class="control">
+            <input class="input" type="text" name="address" id="address" placeholder="Rua Pindaiba" maxlength="200"
+              required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="city">Cidade:</label>
+          <div class="control">
+            <input class="input" type="text" name="city" id="city" placeholder="San Andreas" maxlength="28" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="state">Estado:</label>
+          <div class="control">
+            <div class="select">
+              <select name="state" id="state" required></select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="radio" for="casa">Casa</label>
+            <input type="radio" name="tipo" id="house" />
+            <label class="radio" for="apartamento">Apartamento</label>
+            <input type="radio" name="tipo" id="apartment" />
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="dados-curriculo">
+        <div class="field">
+          <label class="label" class="label-textarea" for="resume">Resumo do currículo:</label>
+          <div class="control">
+            <textarea class="textarea" name="resume" id="resume" cols="25" rows="10" maxlength="1000"
+              required></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="cargo">Cargo:</label>
+          <div class="control">
+            <input class="input" type="text" name="cargo" id="cargo" maxlength="40" placeholder="Pintor" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" class="label-textarea" for="desc">Descrição do cargo</label>
+          <div class="control">
+            <textarea class="textarea" name="desc" id="desc" cols="30" rows="10" maxlength="500" required></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="data-inicio">Data de início:</label>
+          <div class="control">
+            <input class="input" type="text" name="data-inicio" id="data-inicio" placeholder="01/02/1993" maxlength="10"
+              required />
+          </div>
+        </div>
+      </fieldset>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link" type="submit" id="btn-submit">Enviar</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light" type="reset" id="btn-reset">Limpar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="resultado"></div>
+  <div class="erro"></div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+      field: document.getElementById('data-inicio'),
+      format: 'DD MM YYYY',
+      toString(date, format) {
+        // you should do formatting based on the passed format,
+        // but we will just return 'D/M/YYYY' for simplicity
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+      },
+      parse(dateString, format) {
+        // dateString is the result of `toString` method
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+      }
+    });
+  </script>
+</body>
+
+</html>
