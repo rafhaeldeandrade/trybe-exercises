@@ -21,6 +21,7 @@
     "jest": "^27.0.6"
   },
   "dependencies": {
+    "@types/jest": "^26.0.24",
     "eslint-config-trybe-fundamentals": "^1.1.1",
     "node-fetch": "^2.6.1"
   }
