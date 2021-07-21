@@ -17,11 +17,9 @@
   },
   "homepage": "https://github.com/rafhaeldeandrade/trybe-exercises#readme",
   "devDependencies": {
-    "eslint": "^7.30.0",
-    "jest": "^27.0.6"
+    "eslint": "^7.30.0"
   },
   "dependencies": {
-    "@types/jest": "^26.0.24",
     "eslint-config-trybe-fundamentals": "^1.1.1",
     "node-fetch": "^2.6.1"
   }
