@@ -1,19 +1,37 @@
 import React from 'react';
+import ButtonType from './ButtonType';
 
 export default class Pokemon extends React.Component {
+  constructor(props) {
+    super(props);
+    this.updateParent = this.updateParent.bind(this);
+  }
+
+  updateParent(value) {
+    this.props.updateGrandParent(value);
+  }
+
   render() {
-    const { id, name, type, averageWeight, image, moreInfo } = this.props.pokemon;
+    const { id, name, types, weight } = this.props.pokemon;
+    const source = `images/${id}.gif`;
 
     return (
       <div className="pokemon">
-        <div className="stats">
-          <h2 className='pokemon-name'>{name}</h2>
-          <span>{type}</span>
-          <span>{averageWeight.value}{averageWeight.measurementUnit}</span>
-          <span>{id}</span>
-        </div>
         <div className="pokemon-image">
-          <a href={moreInfo}><img src={image} alt={name + ' image'} /></a>
+          <img src={source} alt={name + ' image'} />
+        </div>
+        <div className="stats">
+          <span className="stat num-pokemon">Nº{id}</span>
+          <h2 className='pokemon-name stat'>{name}</h2>
+          <span className="stat">{parseFloat(weight/10)}kg</span>
+          <div className="types">
+            {types.map(
+              (typeObj) => <ButtonType
+              key={name + ' ' + typeObj.type.name}
+              type={typeObj.type.name}
+              updateParent={this.updateParent}
+              />)}
+          </div>
         </div>
       </div>
     );
