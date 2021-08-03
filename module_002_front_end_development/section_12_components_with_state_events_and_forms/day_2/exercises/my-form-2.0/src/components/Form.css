@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.personal-data,
+.resumee-data {
+  padding: 8px;
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-input {
+  display: inline-block;
+  width: 70px;
+  text-align: right;
+  margin-right: 4px;
+}
+
+.input-div {
+  margin-bottom: 4px;
+}
+
+.input-div input.text-input,
+select {
+  padding: 4px;
+  width: 200px;
+}
+
+input.radio-input {
+  margin-right: 6px;
+}
+
+label.radio-input {
+  margin-right: 8px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-start input.text-input {
+  width: 305px;
+}
