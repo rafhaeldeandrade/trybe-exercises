@@ -1,0 +1,7 @@
+# Exercícios Bloco 18 dia 2
+
+1. Refatore o exercicio do repositório [exercise-react-hooks-refactoring](https://github.com/rafhaeldeandrade/exercise-contextAPI-refactoring/tree/exercise-one), substituindo toda a lógica de classes para a lógica de React Hooks , deixando todos os componentes funcionais. Lembre-se de acessar a branch exercise-one , a estrutura da aplicação estará pronta para ser refatorada.
+2. Refatore o exercício do repositório [exercise-react-hooks-refactoring](https://github.com/rafhaeldeandrade/exercise-contextAPI-refactoring/tree/exercise-two), como fez no exercício anterior, substitua toda a lógica de classes para a lógica de React Hooks , deixando todos os componentes funcionais. Lembre-se de acessar a branch exercise-two , a estrutura da aplicação estará pronta para ser refatorada.
+3. Refatore o exercício do repositório [exercise-react-hooks-refactoring](https://github.com/rafhaeldeandrade/exercise-contextAPI-refactoring/tree/exercise-three), também substituindo toda a lógica de classes para a lógica de React Hooks , deixando todos os componentes funcionais. Aproveite que ele possui testes e veja como é prático refatorar uma aplicação que já foi testada! Lembre-se de acessar a branch exercise-three , a estrutura da aplicação estará pronta para ser utilizada.
+
+## Repositório com a resolução dos exercícios: [https://github.com/rafhaeldeandrade/exercise-contextAPI-refactoring/tree/master](https://github.com/rafhaeldeandrade/exercise-contextAPI-refactoring/tree/master)
