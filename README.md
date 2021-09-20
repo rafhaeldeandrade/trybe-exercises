@@ -62,3 +62,68 @@ O programa conta com mais de 1.500 horas de aulas e aborda introdução ao desen
 - [x] 8-4 JavaScript ES6 - Higher Order Functions - reduce
 - [x] 8-5 JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
 - [x] 8-6 [Projeto: Zoo Functions](https://github.com/tryber/sd-013-a-project-zoo-functions/tree/rafhaeldeandrade-zoo-functions)
+
+### Bloco 09: JavaScript Assíncrono e Promises
+
+- [x] 9-1 JavaScript Assíncrono e Callbacks
+- [x] 9-2 JavaScript Promises
+- [x] 9-3 [Projeto: Carrinho de Compras](https://github.com/tryber/sd-013-a-project-shopping-cart/tree/rafhaeldeandrade-shopping-cart)
+
+### Bloco 10: Testes automatizados com Jest
+
+- [x] 10-1 Primeiros passos no Jest
+- [x] 10-2 Jest - Testes Assíncronos
+- [x] 10-3 Jest - Simulando comportamentos
+- [x] 10-4 [Projeto: Jest Assíncrono e Mocking](https://github.com/tryber/sd-013-a-project-jest/tree/rafhaeldeandrade-jest)
+
+
+## Desenvolvimento Front-end
+
+### Bloco 11: Introdução à React
+
+- [x] 11-1 'Hello, world!' no React!
+- [x] 11-2 Componentes React
+- [x] 11-3 [Projeto: Movie Cards Library](https://github.com/tryber/sd-013-a-project-movie-cards-library/tree/rafhaeldeandrade-movies-card-library)
+
+### Bloco 12: Componentes com Estado, Eventos e Formulários com React
+
+- [x] 12-1 Componentes com estado e eventos
+- [x] 12-2 Formulários no React
+- [x] 12-3 [Projeto: Movie Cards Library Stateful](https://github.com/tryber/sd-013-a-project-movie-cards-library-stateful/tree/rafhaeldeandrade-movie-cards-library-stateful)
+
+### Bloco 13: Ciclo de Vida de Componentes e React Router
+
+- [x] 13-1 Ciclo de vida de componentes
+- [x] 13-2 React Router
+
+### Bloco 14: Metodologias Ágeis
+
+- [x] 14-1 Metodologias Ágeis
+- [x] 14-2 [Projeto: Frontend Online Store](https://github.com/tryber/sd-013-a-project-frontend-online-store/tree/main-group-20)
+
+### Bloco 15: Testes automatizados com React Testing Library
+
+- [x] 15-1 RTL - Primeiros passos
+- [x] 15-2 RTL - Mocks e Inputs
+- [x] 15-3 RTL - Testando React Router
+- [x] 15-4 [Projeto: Testes em React](https://github.com/tryber/sd-013-a-project-react-testing-library/tree/rafhael-react-testing-library)
+
+### Bloco 16: Gerenciamento de estado com Redux
+
+- [x] 16-1 Introdução ao Redux - O estado global da aplicação
+- [x] 16-2 Usando o Redux no React
+- [x] 16-3 Usando o Redux no React - Prática
+- [x] 16-4 Usando o Redux no React - Actions Assíncronas
+- [x] 16-5 Testes em React-Redux
+- [x] 16-6 [Projeto: Trybe Wallet](https://github.com/tryber/sd-013-a-project-trybewallet/tree/rafhaeldeandrade-trybewallet)
+
+### Bloco 17: Projeto Jogo de Trivia
+
+- [x] 17-1 [Projeto: Jogo de Trivia](https://github.com/tryber/sd-013-a-project-trivia-react-redux/tree/main-group-19)
+
+### Bloco 18: Context API e React Hooks
+
+- [x] 18-1 Context API do React
+- [x] 18-2 React Hooks - useState e useContext
+- [x] 18-3 React Hooks - useEffect e Hooks customizados
+- [x] 18-4 [Projeto: StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-013-a-project-starwars-planets-search/tree/rafhaeldeandrade-starwars-planets-search)
