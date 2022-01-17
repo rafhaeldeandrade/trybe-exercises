@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Sport Club Corinthians Paulista",
+    "initials": "COR",
+    "country": "Brazil",
+    "league": "Série A"
+  },
+  {
+    "id": 2,
+    "name": "Sociedade Esportiva Palmeiras",
+    "initials": "PAL",
+    "country": "Brazil",
+    "league":"Série A"
+  },
+  {
+    "id": 3,
+    "name": "São Paulo Futebol Clube",
+    "initials": "SPA",
+    "country":"Brazil",
+    "league":"Série A"
+  }
+]
