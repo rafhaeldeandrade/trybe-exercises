@@ -1,5 +1,15 @@
 {
-  "extends": [
-    "trybe-backend"
-  ]
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "mocha": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "no-unused-vars": [2, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
 }
