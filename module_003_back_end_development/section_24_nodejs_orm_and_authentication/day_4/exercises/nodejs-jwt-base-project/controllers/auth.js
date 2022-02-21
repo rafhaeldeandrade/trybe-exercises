@@ -1,11 +1,12 @@
 const jwt = require('jsonwebtoken');
-require('dotenv').config();
 
 module.exports = (req, res, next) => {
   const token = req.headers.authorization;
 
   if (!token) {
-    return res.status(401).json({ error: { message: 'Token not found' } });
+    return res
+      .status(400)
+      .json({ message: 'Token não encontrado ou informado' });
   }
 
   try {

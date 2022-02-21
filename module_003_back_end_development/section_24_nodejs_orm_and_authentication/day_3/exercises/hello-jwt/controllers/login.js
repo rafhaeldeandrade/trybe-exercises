@@ -1,6 +1,6 @@
-const joi = require("joi");
-const jwt = require("jsonwebtoken");
-require("dotenv").config();
+const joi = require('joi');
+const jwt = require('jsonwebtoken');
+require('dotenv').config();
 
 module.exports = (req, res) => {
   const { username, password } = req.body;
@@ -15,17 +15,17 @@ module.exports = (req, res) => {
   if (checkUsernameAndPassword.error) throw checkUsernameAndPassword.error;
 
   const jwtConfig = {
-    expiresIn: "1h",
-    algorithm: "HS256",
+    expiresIn: '1h',
+    algorithm: 'HS256',
   };
 
   const nameAndPasswordAreWhatEx7asks =
-    username === "admin" && password === "s3nh4S3gur4???";
+    username === 'admin' && password === 's3nh4S3gur4???';
 
   const token = jwt.sign(
     { username, admin: nameAndPasswordAreWhatEx7asks },
     process.env.JWT_SECRET,
-    jwtConfig
+    jwtConfig,
   );
 
   res.status(200).json({ token });
